@@ -1,4 +1,5 @@
-require 'cymbalize/railtie' if defined?(Rails)
+require 'cymbalize/railtie'
+require 'active_support/concern'
 
 module Cymbalize
   extend ActiveSupport::Concern
