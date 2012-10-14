@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.name          = 'cymbalize'
   s.version       = '0.1.0'
   s.summary       = 'Use symbols in ActiveRecord columns.'
+  s.platform      = Gem::Platform::RUBY
   s.description   = <<-HERE
 Cymbalize is a tiny extension to support symbolized columns in ActiveRecord,
 with optional convenience methods. It's heavily inspired by nofxx's symbolize
@@ -28,5 +29,6 @@ Gem.
   s.add_dependency 'rails', '>= 3.0.0'
   s.add_dependency 'activerecord', '>= 3.0.0'
 
-  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'rspec', '>= 2.11.0'
+  s.add_development_dependency 'sqlite3', '>= 1.3.6'
 end
