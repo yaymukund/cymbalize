@@ -21,6 +21,13 @@ ActiveRecord::Schema.define do
   end
 end
 
-class User < ActiveRecord::Base
-  symbolize :name, :gender, :status, :mood
+def create_user_class
+  Class.new(ActiveRecord::Base) do
+
+    def self.name
+      'User'
+    end
+
+    self.table_name = 'users'
+  end
 end
