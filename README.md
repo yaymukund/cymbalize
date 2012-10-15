@@ -1,9 +1,8 @@
 cymbalize
 =========
 
-Use symbols in ActiveRecord columns. This gem is more or less a rewrite of
-[nofxx's symbolize gem][nofxx_symbolize]. It implements the same interface,
-but without `allow_nil`.
+Use symbols in ActiveRecord columns. This gem implements a subset of
+[nofxx's symbolize gem][nofxx_symbolize].
 
 ### Installation
 
